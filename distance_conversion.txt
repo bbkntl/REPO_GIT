@@ -1,0 +1,21 @@
+using System;
+
+namespace project2
+{
+    class MainClass
+    {
+      public static double DistanceConversionFromKilometersToMiles(double kilometers)
+        {
+            double mile = 0.62137119;
+            double milesNumber = kilometers * mile;
+            return milesNumber;
+        }
+      public static void Main(string[] args)
+        {
+            Console.Write("Enter the number of kilometers: ");
+            double kilometers = double.Parse(Console.ReadLine());
+            double result = DistanceConversionFromKilometersToMiles(kilometers);
+            Console.WriteLine($"{kilometers} kilometers = {result} miles"); 
+        }
+    }
+}	
