@@ -1,0 +1,27 @@
+using System;
+
+namespace project2
+{
+    class MainClass
+    {
+      public static int RaisingNumberToPower(int number, int power)
+        {
+            int numberCount = number;
+            for (int i = 1; i < power; i++)
+            {
+                numberCount = numberCount * number;
+            }
+            return numberCount;
+        }
+
+      public static void Main(string[] args)
+        {
+            Console.Write("Enter the number: ");
+            int number = int.Parse(Console.ReadLine());
+            Console.Write("Enter the power of the number: ");
+            int power = int.Parse(Console.ReadLine());
+            int result = RaisingNumberToPower(number, power);
+            Console.WriteLine($"Number {number} in power {power} = " + result);
+        }
+    }
+}
