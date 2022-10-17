@@ -1,0 +1,23 @@
+using System;
+
+namespace project2
+{
+    class MainClass
+    {
+      public static void WriteTable(int x)
+        {
+            Console.WriteLine($"Multiplication table for a number {x}: ");
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"{x} * {i} = {x * i}");
+            }
+        }
+      public static void Main(string[] args)
+        {
+            Console.Write("Enter a number: ");
+            int userInt = int.Parse(Console.ReadLine());
+
+            WriteTable(userInt);
+        }
+    }
+}
